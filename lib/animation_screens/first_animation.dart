@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ContainerWithAnimation extends StatefulWidget {
-  ContainerWithAnimation({Key? key}) : super(key: key);
+class ClickBounceAnimation extends StatefulWidget {
+  ClickBounceAnimation({Key? key}) : super(key: key);
 
   @override
-  State<ContainerWithAnimation> createState() => _ContainerWithAnimationState();
+  State<ClickBounceAnimation> createState() => _ClickBounceAnimationState();
 }
 
-class _ContainerWithAnimationState extends State<ContainerWithAnimation> {
+class _ClickBounceAnimationState extends State<ClickBounceAnimation> {
   double sizeFactor = 1;
   @override
   Widget build(BuildContext context) {
@@ -47,3 +47,5 @@ class _ContainerWithAnimationState extends State<ContainerWithAnimation> {
     );
   }
 }
+
+

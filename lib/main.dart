@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animation_course/animation_screens/bounceable.dart';
 import 'package:flutter_animation_course/animation_screens/first_animation.dart';
 
 void main() {
@@ -38,13 +39,15 @@ class _HomeState extends State<Home> {
           controller: controller,
           children: [
             Scaffold(
-              backgroundColor: Colors.deepOrange[50],
+              body: Center(child: ClickBounceAnimation()),
             ),
             Scaffold(
-              backgroundColor: Colors.amber[50],
-            ),
-            Scaffold(
-              body: Center(child: ContainerWithAnimation()),
+              body: Center(
+                child: Bounceable(
+                  child: ContainerBounce(),
+                  onTap: () {},
+                ),
+              ),
             ),
           ].reversed.toList(),
         ),
