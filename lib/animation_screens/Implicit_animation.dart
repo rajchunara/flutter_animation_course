@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 const duration = Duration(milliseconds: 350);
@@ -38,4 +40,41 @@ class _AnimateOpacityState extends State<AnimateOpacity> {
   }
 }
 
+class AlignAnimate extends StatefulWidget {
+  AlignAnimate({Key? key}) : super(key: key);
 
+  @override
+  State<AlignAnimate> createState() => _AlignAnimateState();
+}
+
+class _AlignAnimateState extends State<AlignAnimate> {
+  List<Alignment> listAlignment = [
+    Alignment.bottomCenter,
+    Alignment.bottomLeft,
+    Alignment.bottomRight,
+    Alignment.center,
+    Alignment.centerLeft,
+    Alignment.centerRight,
+    Alignment.topCenter,
+    Alignment.topLeft,
+    Alignment.topRight
+  ];
+  Alignment alignment = Alignment.bottomRight;
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        Random random = Random();
+        setState(() {
+          /* Generate random alignment */
+          alignment = listAlignment[random.nextInt(9)];
+        });
+      },
+      child: AnimatedAlign(
+        child: container,
+        duration: duration,
+        alignment: alignment,
+      ),
+    );
+  }
+}

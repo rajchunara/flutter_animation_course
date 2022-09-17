@@ -54,7 +54,12 @@ class _HomeState extends State<Home> {
               body: Center(
                 child: AnimateOpacity(),
               ),
-            )
+            ),
+            Scaffold(
+              body: Center(
+                child: AlignAnimate(),
+              ),
+            ),
           ].reversed.toList(),
         ),
         bottomNavigationBar: BottomNavigationBar(
