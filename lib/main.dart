@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animation_course/animation_screens/first_animation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,6 +42,9 @@ class _HomeState extends State<Home> {
             ),
             Scaffold(
               backgroundColor: Colors.amber[50],
+            ),
+            Scaffold(
+              body: Center(child: ContainerWithAnimation()),
             ),
           ].reversed.toList(),
         ),
