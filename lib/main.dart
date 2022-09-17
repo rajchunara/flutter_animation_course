@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animation_course/animation_screens/Implicit_animation.dart';
 import 'package:flutter_animation_course/animation_screens/bounceable.dart';
-import 'package:flutter_animation_course/animation_screens/first_animation.dart';
+import 'package:flutter_animation_course/animation_screens/click_animation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,6 +50,11 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
+            Scaffold(
+              body: Center(
+                child: AnimateOpacity(),
+              ),
+            )
           ].reversed.toList(),
         ),
         bottomNavigationBar: BottomNavigationBar(
