@@ -13,6 +13,18 @@ final Container container = Container(
   ),
 );
 
+/* 
+Align -> AnimateAlign
+Container -> AnimatedContainer
+DefaultTextStyle -> AnimatedDefaultTextStyle
+Opacity -> AnimatedOpacity
+Padding -> AnimatedPadding
+PhysicalModel -> AnimatedPhysicalModel
+Positioned -> AnimatedPositioned
+PositionDirectional -> AnimatedPositionedDirectional
+Theme -> AnimatedThemeSize -> AnimatedSize
+ */
+
 class AnimateOpacity extends StatefulWidget {
   AnimateOpacity({Key? key}) : super(key: key);
 
