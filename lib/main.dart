@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animation_course/animation_screens/Implicit_animation.dart';
+import 'package:flutter_animation_course/animation_screens/implicit_animation.dart';
 import 'package:flutter_animation_course/animation_screens/bounceable.dart';
 import 'package:flutter_animation_course/animation_screens/click_animation.dart';
+import 'package:flutter_animation_course/animation_screens/tween_animation_builder.dart';
 
 void main() {
   runApp(const MyApp());
@@ -58,6 +59,11 @@ class _HomeState extends State<Home> {
             Scaffold(
               body: Center(
                 child: AlignAnimate(),
+              ),
+            ),
+            Scaffold(
+              body: Center(
+                child: TweenAnime(),
               ),
             ),
           ].reversed.toList(),
