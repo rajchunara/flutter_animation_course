@@ -66,6 +66,11 @@ class _HomeState extends State<Home> {
                 child: TweenAnime(),
               ),
             ),
+            Scaffold(
+              body: Center(
+                child: TweenOpacityPadding(),
+              ),
+            ),
           ].reversed.toList(),
         ),
         bottomNavigationBar: BottomNavigationBar(
