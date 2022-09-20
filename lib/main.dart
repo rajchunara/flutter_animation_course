@@ -71,6 +71,11 @@ class _HomeState extends State<Home> {
                 child: TweenOpacityPadding(),
               ),
             ),
+            Scaffold(
+              body: Center(
+                child: TweenRandomColor(),
+              ),
+            ),
           ].reversed.toList(),
         ),
         bottomNavigationBar: BottomNavigationBar(
