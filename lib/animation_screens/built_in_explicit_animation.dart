@@ -15,4 +15,7 @@ List of Transition widget used for built in explicit animation
 -DefaultTextStyleTransition
 -RelativePositionTransition
 
+This above transition widgets extends AnimatedWidget
+
+
  */
