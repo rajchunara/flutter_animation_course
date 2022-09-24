@@ -61,7 +61,18 @@ class _ExplicitBuiltInRotationState extends State<ExplicitBuiltInRotation>
     return RotationTransition(
       turns: _animationController,
       alignment: Alignment.center,
-      child: container,
+      child: GestureDetector(
+        child: container,
+        onTap: () {
+          _animationController.isAnimating
+              ? _animationController.stop()
+              : {
+                  _animationController
+                      .forward()
+                      .whenComplete(() => _animationController.repeat())
+                };
+        },
+      ),
     );
   }
 }
