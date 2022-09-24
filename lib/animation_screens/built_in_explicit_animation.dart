@@ -48,6 +48,14 @@ class _ExplicitBuiltInRotationState extends State<ExplicitBuiltInRotation>
     _animationController.dispose();
   }
 
+  void stopAnimation() {
+    _animationController.stop();
+  }
+
+  void continueAnimation() {
+    _animationController.forward();
+  }
+
   @override
   Widget build(BuildContext context) {
     return RotationTransition(

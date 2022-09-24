@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animation_course/animation_screens/built_in_explicit_animation.dart';
 import 'package:flutter_animation_course/animation_screens/implicit_animation.dart';
 import 'package:flutter_animation_course/animation_screens/bounceable.dart';
 import 'package:flutter_animation_course/animation_screens/click_animation.dart';
@@ -76,7 +77,8 @@ class _HomeState extends State<Home> {
                 child: TweenRandomColor(),
               ),
             ),
-            
+            /* Rotation Explicit Animation */
+            Scaffold(body: Center(child: ExplicitBuiltInRotation()))
           ].reversed.toList(),
         ),
         bottomNavigationBar: BottomNavigationBar(
