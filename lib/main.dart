@@ -77,8 +77,9 @@ class _HomeState extends State<Home> {
                 child: TweenRandomColor(),
               ),
             ),
-            /* Rotation Explicit Animation */
-            Scaffold(body: Center(child: ExplicitBuiltInRotation()))
+            /* Rotation Explicit built in Animation */
+            Scaffold(body: Center(child: ExplicitBuiltInRotation())),
+            Scaffold(body: Center(child: ExplicitColorAndScaleAnimation()))
           ].reversed.toList(),
         ),
         bottomNavigationBar: BottomNavigationBar(
