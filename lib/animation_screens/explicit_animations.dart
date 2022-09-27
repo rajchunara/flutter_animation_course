@@ -57,3 +57,5 @@ class _ExplicitAnimationsState extends State<ExplicitAnimations>
     );
   }
 }
+
+//Todo: Explicit animations using Animation Builder
