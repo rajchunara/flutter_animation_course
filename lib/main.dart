@@ -60,6 +60,7 @@ class _HomeState extends State<Home> {
             Scaffold(body: Center(child: ExplicitBuiltInRotation())),
             Scaffold(body: Center(child: ExplicitColorAndScaleAnimation())),
             Scaffold(body: Center(child: ExplicitAnimations())),
+            Scaffold(body: Center(child: ExplicitWithAnimationBuilder())),
           ].reversed.toList(),
         ),
         bottomNavigationBar: BottomNavigationBar(
