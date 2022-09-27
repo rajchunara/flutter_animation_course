@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animation_course/animation_screens/built_in_explicit_animation.dart';
+import 'package:flutter_animation_course/animation_screens/explicit_animations.dart';
 import 'package:flutter_animation_course/animation_screens/implicit_animation.dart';
 import 'package:flutter_animation_course/animation_screens/bounceable.dart';
 import 'package:flutter_animation_course/animation_screens/click_animation.dart';
@@ -45,41 +46,20 @@ class _HomeState extends State<Home> {
               body: Center(child: ClickBounceAnimation()),
             ),
             Scaffold(
-              body: Center(
-                child: Bounceable(
-                  child: ContainerBounce(),
-                  onTap: () {},
-                ),
-              ),
-            ),
-            Scaffold(
-              body: Center(
-                child: AnimateOpacity(),
-              ),
-            ),
-            Scaffold(
-              body: Center(
-                child: AlignAnimate(),
-              ),
-            ),
-            Scaffold(
-              body: Center(
-                child: TweenAnime(),
-              ),
-            ),
-            Scaffold(
-              body: Center(
-                child: TweenOpacityPadding(),
-              ),
-            ),
-            Scaffold(
-              body: Center(
-                child: TweenRandomColor(),
-              ),
-            ),
+                body: Center(
+                    child: Bounceable(
+              child: ContainerBounce(),
+              onTap: () {},
+            ))),
+            Scaffold(body: Center(child: AnimateOpacity())),
+            Scaffold(body: Center(child: AlignAnimate())),
+            Scaffold(body: Center(child: TweenAnime())),
+            Scaffold(body: Center(child: TweenOpacityPadding())),
+            Scaffold(body: Center(child: TweenRandomColor())),
             /* Rotation Explicit built in Animation */
             Scaffold(body: Center(child: ExplicitBuiltInRotation())),
-            Scaffold(body: Center(child: ExplicitColorAndScaleAnimation()))
+            Scaffold(body: Center(child: ExplicitColorAndScaleAnimation())),
+            Scaffold(body: Center(child: ExplicitAnimations())),
           ].reversed.toList(),
         ),
         bottomNavigationBar: BottomNavigationBar(
