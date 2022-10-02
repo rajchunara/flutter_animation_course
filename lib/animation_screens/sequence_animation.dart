@@ -35,7 +35,8 @@ class _SequenceAnimationOfContainerState
 
   onTap() {
     // _controller.forward().then((value) => _controller.reverse()).then((value) => _controller.repeat(reverse: true));
-    _controller.repeat(reverse: true);
+    (_controller.isAnimating) ? _controller.stop() : _controller.repeat(reverse:true);
+    // _controller.repeat(reverse: true);
   }
 
   @override
