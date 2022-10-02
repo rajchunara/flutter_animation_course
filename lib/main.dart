@@ -4,6 +4,7 @@ import 'package:flutter_animation_course/animation_screens/explicit_animations.d
 import 'package:flutter_animation_course/animation_screens/implicit_animation.dart';
 import 'package:flutter_animation_course/animation_screens/bounceable.dart';
 import 'package:flutter_animation_course/animation_screens/click_animation.dart';
+import 'package:flutter_animation_course/animation_screens/sequence_animation.dart';
 import 'package:flutter_animation_course/animation_screens/tween_animation_builder.dart';
 
 void main() {
@@ -61,6 +62,8 @@ class _HomeState extends State<Home> {
             Scaffold(body: Center(child: ExplicitColorAndScaleAnimation())),
             Scaffold(body: Center(child: ExplicitAnimations())),
             Scaffold(body: Center(child: ExplicitWithAnimationBuilder())),
+            /* Staggered Animation */
+            Scaffold(body: Center(child: SequenceAnimationOfContainer())),
           ].reversed.toList(),
         ),
         bottomNavigationBar: BottomNavigationBar(
